@@ -74,6 +74,8 @@ SUBSTRING(PropertyAddress, 1, CHARINDEX(',', PropertyAddress) -1 ) as Address
 
 From PortfolioProject.dbo.NashvilleHousing
 
+-- Spliting City from Adress
+
 
 ALTER TABLE NashvilleHousing
 Add PropertySplitAddress Nvarchar(255);
