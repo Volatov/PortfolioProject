@@ -45,6 +45,7 @@ JOIN PortfolioProject.dbo.NashvilleHousing b
 	AND a.[UniqueID ] <> b.[UniqueID ]
 Where a.PropertyAddress is null
 
+-- Get rid of null
 
 Update a
 SET PropertyAddress = ISNULL(a.PropertyAddress,b.PropertyAddress)
